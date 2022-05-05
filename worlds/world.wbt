@@ -1,0 +1,75 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.009023440459811648 -0.9923156199445708 -0.12340294946349717 3.3359181210521296
+  position 0.9499488843567534 0.2414010727433745 -0.8245274659163657
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.109093 0 -0.119003
+  floorSize 2 2
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+TrackOne {
+  translation 0 -0.0075 0
+}
+E-puck {
+  hidden position_0_0 -1.168300046247124
+  hidden position_0_1 1.1683000446155443
+  hidden linearVelocity_0 9.619787150772674e-06 -9.094089629501219e-10 9.127735626394493e-06
+  hidden angularVelocity_0 0.0006422063782288657 0.14051590322395735 -0.0006986005319169234
+  hidden translation_1 -0.026 0.02 0
+  hidden rotation_1 1 0 0 1.1683000462471238
+  hidden linearVelocity_1 0.0026986101092944057 3.0174502452240596e-08 0.002489376643918509
+  hidden angularVelocity_1 0.13623814427208764 0.14052459452539867 -0.14771505513336236
+  hidden translation_2 0.025999999999999995 0.02 0
+  hidden rotation_2 -1 0 0 1.1683000446155443
+  hidden linearVelocity_2 -0.002672445023136201 -2.833964822812523e-08 -0.0024646272127982435
+  hidden angularVelocity_2 -0.13495372856528842 0.14052343020160687 0.14631785687415813
+  translation 0.7713000737791504 -6.396376657538151e-05 0.5785942881491679
+  rotation -5.579756005465733e-05 0.9999999980491041 2.807888792907685e-05 0.8286700644859422
+  controller "cameratest"
+  groundSensorsSlot [
+    DistanceSensor {
+      translation 0 -0.01 0
+      name "ir0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0.02 0
+      name "ir1"
+      type "infra-red"
+    }
+  ]
+}
+Solid {
+  translation 0.3710716689197795 0.09342527489456726 0.2173372599939767
+  rotation -0.6550940973014486 -0.39422148345424063 0.64454724083184 2.655129224469672
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.690196 0.890196
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject Sphere {
+    radius 0.1
+  }
+  physics Physics {
+  }
+  linearVelocity -0.033772120846761094 1.4959312613301016e-16 0.05309252690566774
+  angularVelocity 0.5309252690566774 0.23163992915500312 0.33772120846761094
+}
